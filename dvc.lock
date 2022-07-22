@@ -11,12 +11,12 @@ stages:
       size: 76
       nfiles: 2
     - path: data/raw
-      md5: 6ffbaaad7b4ac6e1afabed19a80b2560.dir
-      size: 0
-      nfiles: 1
+      md5: 22a6894afc81c80cd7647351f69f5673.dir
+      size: 4281337
+      nfiles: 7
     - path: src/process.py
-      md5: c6461449c3dfa7a6b467c8e51827e41c
-      size: 566
+      md5: 5f173abb237cee6a6bffb99caf4ae2d5
+      size: 570
     outs:
     - path: data/processed
       md5: 6ffbaaad7b4ac6e1afabed19a80b2560.dir
@@ -37,8 +37,8 @@ stages:
       size: 0
       nfiles: 1
     - path: src/train_model.py
-      md5: 0e2649f8b7f59f41a2a50c48154b7403
-      size: 1343
+      md5: dc1fc6d9851e1a926051843db1e057a9
+      size: 1342
     outs:
     - path: data/final
       md5: 6ffbaaad7b4ac6e1afabed19a80b2560.dir
