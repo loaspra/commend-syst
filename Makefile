@@ -1,24 +1,31 @@
 .PHONY: notebook docs
 .EXPORT_ALL_VARIABLES:
 
-install: 
-	@echo "Installing... "
-	conda env create --file env.yml
-	@echo "Installing dependencies... "
-	conda run pip install -r requirements.txt
 
 activate:
 	@echo "Activating virtual environment"
 	conda activate comend_NN
 
+install: activate
+	@echo "Installing dependencies... "
+	conda run -n comend_NN pip install -r requirements.txt
+	@echo "Done Installing packages!"
+
 initialize_git:
 	git init 
-	conda run pre-commit install 
+	conda run -n comend_NN pre-commit install 
 
 pull_data:
-	conda run pip run dvc pull
+	conda run -n comend_NN pip run dvc pull
 
-setup: initialize_git install
+setup:
+	@echo "Installing... "
+	conda env create --file env.yml
+	@echo "Activating virtual environment"
+	conda activate comend_NN
+	@echo "Conda environment initialized succesfully!"
+	install 
+	initialize_git
 
 test:
 	pytest

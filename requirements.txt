@@ -7,4 +7,4 @@ scikit-learn
 matplotlib
 pre-commit
 dvc
-'dvc[gdrive]'
+dvc[gdrive]
