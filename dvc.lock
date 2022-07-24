@@ -19,9 +19,9 @@ stages:
       size: 570
     outs:
     - path: data/processed
-      md5: 6ffbaaad7b4ac6e1afabed19a80b2560.dir
-      size: 0
-      nfiles: 1
+      md5: 68607cf2af5e5f98dee279d5609dc4d2.dir
+      size: 5611961
+      nfiles: 3
   train_model:
     cmd: python src/train_model.py
     deps:
@@ -33,9 +33,9 @@ stages:
       size: 24
       nfiles: 2
     - path: data/processed
-      md5: 6ffbaaad7b4ac6e1afabed19a80b2560.dir
-      size: 0
-      nfiles: 1
+      md5: 68607cf2af5e5f98dee279d5609dc4d2.dir
+      size: 5611961
+      nfiles: 3
     - path: src/train_model.py
       md5: dc1fc6d9851e1a926051843db1e057a9
       size: 1342
