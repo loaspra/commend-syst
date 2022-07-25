@@ -3,7 +3,6 @@ This is the demo code that uses hy                                              
 
 Author: Khuyen Tran
 """
-
 import hydra
 from hydra.utils import to_absolute_path as abspath
 from omegaconf import DictConfig
