@@ -70,10 +70,3 @@ To run the entire pipeline, type:
 conda run dvc repo
 ```
 
-# Auto-generate API documentation
-
-To auto-generate API document for your project, run:
-
-```bash
-make docs
-```
